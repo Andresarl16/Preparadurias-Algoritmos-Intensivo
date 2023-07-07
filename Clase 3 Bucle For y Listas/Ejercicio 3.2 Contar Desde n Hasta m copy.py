@@ -8,7 +8,8 @@ for i in range(2, number):
         dividers.append(i)
         prime = False
 
-dividers.append(number)
+if (number != 1):
+    dividers.append(number)
 
 print(f"Los divisores del número son: {dividers}")
 
