@@ -1,0 +1,11 @@
+{
+  "pronostico_semanal": [
+    { "dia": "Lunes", "temperatura_maxima": 25 },
+    { "dia": "Martes", "temperatura_maxima": 28 },
+    { "dia": "Miércoles", "temperatura_maxima": 30 },
+    { "dia": "Jueves", "temperatura_maxima": 29 },
+    { "dia": "Viernes", "temperatura_maxima": 27 },
+    { "dia": "Sábado", "temperatura_maxima": 26 },
+    { "dia": "Domingo", "temperatura_maxima": 24 }
+  ]
+}
