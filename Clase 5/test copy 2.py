@@ -1,18 +1,10 @@
 import requests
 import matplotlib.pyplot as plt
 
-""" response = requests.get("URL_DE_LA_API_RESTful") """
-data = {
-    "pronostico_semanal": [
-        {"dia": "Lunes", "temperatura_maxima": 25},
-        {"dia": "Martes", "temperatura_maxima": 28},
-        {"dia": "Miércoles", "temperatura_maxima": 30},
-        {"dia": "Jueves", "temperatura_maxima": 29},
-        {"dia": "Viernes", "temperatura_maxima": 27},
-        {"dia": "Sábado", "temperatura_maxima": 26},
-        {"dia": "Domingo", "temperatura_maxima": 24},
-    ]
-}
+response = requests.get(
+    "https://raw.githubusercontent.com/Andresarl16/Preparadurias-Algoritmos-Intensivo/main/Clase%205/APIs/temperature.json"
+)
+data = response.json()
 
 # Extraer los datos relevantes
 temperaturas = [dia["temperatura_maxima"] for dia in data["pronostico_semanal"]]
